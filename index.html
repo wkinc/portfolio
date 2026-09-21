@@ -1,105 +1,90 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Chua Weng Kin (Calvin), Computer Science (Data Science) student.">
+    <title>Chua Weng Kin | Portfolio</title>
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="logo" href="index.html">Calvin Chua</a>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<html>
-    <title>About Me</title>
-
-
-    <head>
-        <meta name="keywords" content="Wkin , Github" lang="en">
-        <meta name="language" content="en">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="resources/style.css"> 
-    </head>
-
-    <body>
-        <header>
-            <h1 id="site-title">
-                <a id="home-link" href="./">
-                    Portfolio
-                </a>
-            </h1>
-        </header>
-        
-        <div id="Content">
-            <div class="content-block">
-                <h2 id="main-title" class="title">
-                    <a class="anchor" href="#main-title">
-                        <span class="anchor-icon">🔗</span>
-                    </a>
-                    Chua Weng Kin
-                </h2>
-                <center><img id="main-logo" src="resources/woody.jpg" alt="main logo"></center>
-                <p id="main-paragraph">
-                    Welcome, I'm Weng Kin! You can call me Calvin. I'm a Computer Science student that likes to experiment his own random projects. I love to learn new things as well. You can see what I can do below!
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <span class="tag">Open to internships</span>
+                <h1>Hi, I'm Weng Kin.<br>You can call me Calvin.</h1>
+                <p>
+                    Computer Science student majoring in Data Science, with experience in Python, SQL,
+                    AI integration, and data processing. I enjoy solving real-world business problems
+                    using data and automation.
                 </p>
+                <a class="btn btn-primary" href="projects.html">View Projects</a>
+                <a class="btn btn-outline" href="contact.html">Get in Touch</a>
             </div>
-            <div class="content-block">
-                <div class="column-row">
-                    <div class="column">
-                        <h2 id="main-experience" class="section-title">
-                            <a class="anchor" href="#main-experience">
-                                <span class="anchor-icon">🔗</span>
-                            </a>
-                            Experience
-                        </h2>
-                        <ul>
-                            <li>HTML, Java, C++, Python, C#</li>
-                        </ul>
-                        <ul>
-                            <li>Video Editing</li>
-                        </ul>
+            <img src="resources/woody.jpg" alt="Portrait of Chua Weng Kin">
+        </section>
 
-                    </div>
-                    <div class="column">
-                        <h2 id="main-languages" class="section-title">
-                            <a class="anchor" href="#main-languages"></a>
-                            Languages
-                        </h2>
-                        <ul>
-                            <li>English</li>
-                            <li>Chinese</li>
-                            <li>Bahasa Malaysia(Malay)</li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h2 id="hobbies" class="section-title">
-                            Likes
-                        </h2>
-                        <ul>
-                            <li>Programming</li>
-                            <li>Gaming</li>
-                            <li>Anime</li>
-                            <li>Experiment with new things</li>
-                        </ul>
+        <section>
+            <h2>Highlights</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>🏆 Top 10 Hackathon</h3>
+                    <p class="muted">The Access Group, 2026. Built an AI-powered restaurant inventory system.</p>
+                </div>
+                <div class="card">
+                    <h3>🎓 Data Science</h3>
+                    <p class="muted">Bachelor of Computer Science (Data Science), expected 2027.</p>
+                </div>
+                <div class="card">
+                    <h3>💼 IT Intern</h3>
+                    <p class="muted">3 months at CTC Global managing and organizing inventory data.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Languages</h3>
+                    <div class="chips">
+                        <span class="chip">Python</span><span class="chip">SQL</span>
+                        <span class="chip">JavaScript</span><span class="chip">HTML</span>
+                        <span class="chip">CSS</span><span class="chip">Java</span>
+                        <span class="chip">C++</span><span class="chip">C#</span>
+                        <span class="chip">R</span><span class="chip">SAS</span>
                     </div>
                 </div>
-
-                <div class="column-row">
-                    <div class="column">
-                        <h2 id="main-contact" class="section-title">
-                            Links/Contact
-                        </h2>
-                        <ul>
-                            <li>Github: <a href="https://github.com/wkinchua" target="_blank">Wkinchua</a></li>
-                            <li>LinkedIn: <a href="https://www.linkedin.com/in/chua-weng-kin-672b73333/" target="_blank">Calvin Chua</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="column">
-                        <h2 id="main-project" class="section-title">Feature Projects</h2>
-                        <ul>
-                            <li><a href="https://github.com/wkinchua/Motion_Detector" target="_blank">Motion Detector (Python)</a></li>
-                            <li><a href="https://wkinchua.github.io/learncode" target="_blank">Learn How to Code (Website)</a></li>
-                        </ul>
+                <div class="card">
+                    <h3>Data &amp; AI</h3>
+                    <div class="chips">
+                        <span class="chip">Pandas</span><span class="chip">Claude API</span>
+                        <span class="chip">Cloudera</span><span class="chip">Hadoop</span>
+                        <span class="chip">SAS Studio</span><span class="chip">Microsoft Excel</span>
                     </div>
                 </div>
-                <br>
-                <br>
+                <div class="card">
+                    <h3>Tools</h3>
+                    <div class="chips">
+                        <span class="chip">Git</span><span class="chip">Visual Studio</span>
+                    </div>
+                </div>
             </div>
+        </section>
+    </main>
 
-        </div>
-    </body>
-
-
+    <footer>&copy; 2026 Chua Weng Kin. Built with HTML &amp; CSS.</footer>
+</body>
 </html>
