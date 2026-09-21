@@ -10,17 +10,15 @@
   --shadow: 0 4px 18px rgba(20, 30, 60, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f131b;
-    --surface: #171c27;
-    --text: #e8ecf4;
-    --muted: #9aa4b8;
-    --accent: #7b9cff;
-    --accent-soft: #212a44;
-    --border: #262d3c;
-    --shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
-  }
+:root[data-theme="dark"] {
+  --bg: #0f131b;
+  --surface: #171c27;
+  --text: #e8ecf4;
+  --muted: #9aa4b8;
+  --accent: #7b9cff;
+  --accent-soft: #212a44;
+  --border: #262d3c;
+  --shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -95,6 +93,19 @@ h3 { font-size: 1.1rem; }
 .grid { display: grid; gap: 18px; }
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+/* ---------- Theme toggle ---------- */
+#theme-toggle {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+#theme-toggle:hover { opacity: 0.85; }
 
 /* ---------- Hero ---------- */
 .hero {
